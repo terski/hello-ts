@@ -1,0 +1,33 @@
+{
+    "name": "hello-ts",
+    "version": "1.0.0",
+    "description": "A typescript starter project",
+    "main": "index.js",
+    "scripts": {
+        "start": "node dist/main.js",
+        "prestart": "build",
+        "dev": "ts-node src/main.ts",
+        "build": "npm run build-ts && npm run tslint",
+        "build-ts": "tsc && echo done",
+        "watch-ts": "tsc -w",
+        "test": "jest --forceExit",
+        "tslint": "tslint -c tslint.json -p tsconfig.json"
+    },
+    "repository": {
+        "type": "git",
+        "url": "git+https://github.com/terski/hello-ts.git"
+    },
+    "author": "",
+    "license": "MIT",
+    "bugs": {
+        "url": "https://github.com/terski/hello-ts/issues"
+    },
+    "homepage": "https://github.com/terski/hello-ts#readme",
+    "devDependencies": {
+        "@types/node": "^10.12.1",
+        "ts-node": "^7.0.1",
+        "tslint": "^5.11.0",
+        "tslint-config-prettier": "^1.15.0",
+        "typescript": "^3.1.3"
+    }
+}
