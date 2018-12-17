@@ -6,4 +6,4 @@ dist
 
 # dotenv
 .env
-dev.env
+*.env
