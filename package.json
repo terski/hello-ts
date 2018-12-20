@@ -2,7 +2,7 @@
     "name": "hello-ts",
     "version": "1.0.0",
     "description": "A typescript starter project",
-    "main": "index.js",
+    "main": "dist/main.js",
     "scripts": {
         "start": "node dist/main.js",
         "prestart": "npm run build",
@@ -25,10 +25,12 @@
     },
     "homepage": "https://github.com/terski/hello-ts#readme",
     "devDependencies": {
+        "@types/aws-lambda": "^8.10.15",
         "@types/dotenv": "^4.0.3",
         "@types/graphql": "^14.0.3",
         "@types/jest": "^23.3.10",
         "@types/node": "^10.12.1",
+        "@types/ws": "^6.0.1",
         "jest": "^23.6.0",
         "ts-jest": "^23.10.5",
         "ts-node-dev": "^1.0.0-pre.31",
@@ -39,6 +41,8 @@
     "dependencies": {
         "dotenv": "^6.1.0",
         "graphql": "^14.0.2",
-        "graphql-cli": "^3.0.3"
+        "graphql-cli": "^3.0.3",
+        "graphql-yoga": "^1.16.7",
+        "prisma-binding": "^2.2.11"
     }
 }
