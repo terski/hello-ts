@@ -3,3 +3,12 @@ type User {
     name: String!
     email: String!
 }
+
+type Subscription {
+    id: ID! @unique
+    planName: String!
+    description: String
+    createdAt: DateTime!
+    updatedAt: DateTime!
+    # user: User!
+}

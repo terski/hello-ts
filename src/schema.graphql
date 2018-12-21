@@ -1,6 +1,9 @@
+# import * from './generated/prisma.graphql'
+
 type Mutation {
-    hi: String
+    createSubscription(planName: String!): Subscription!
 }
+
 type Query {
-    hi: String
+    subscriptions: [Subscription!]
 }
